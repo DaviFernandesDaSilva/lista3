@@ -113,17 +113,14 @@ while sair == 0:
             print("Empréstimo Concedido")
         else:
             print("Empréstimo Negado")
+
     #=======================================
     elif escolha == "8":
-        numero1 = int(print("Digite o número inteiro)"))
+        numero1 = int(print("Digite o número inteiro: ")) # type: ignore
         if numero1%3==0:
-            print(f"{numero1} é divisel por 3")
+            print(f"{numero1} é divisivel or 3")
         elif numero1%3==0:
-            print(f"{numero2} é divisel por 3")
-
-
-
-
+            print(f"{numero1} é divisivel por 3")
     #=======================================
     elif escolha == "9":
         print("ABAIXO A PRESIDÊNCIA!!!\n")
