@@ -21,8 +21,8 @@ while sair == 0:
         # QUESTÃO 1
         # Faça um programa que receba dois números e imprima o maior deles, se por acaso os dois números
         # forem iguais, imprima a mensagem Números iguais.
-        numero1 = int(input("Digite o primeiro numero"))
-        numero2 = int(input("Digite o segundo numero"))
+        numero1 = int(input("Digite o primeiro numero: "))
+        numero2 = int(input("Digite o segundo numero: "))
 
         if numero1 > numero2:
             print(f"{numero1} é maior")
@@ -33,17 +33,17 @@ while sair == 0:
 
     # =======================================
     elif escolha == "2":
-        numero1 = int(input("Digite um numero"))
+        numero1 = int(input("Digite um numero: "))
         if (numero1 % 2 == 0):
             print("Par")
         else:
             print("Impar")
     # =======================================
     elif escolha == "3":
-        numero1 = int(input("Digite o primeiro numero"))
-        numero2 = int(input("Digite o segundo numero"))
-        numero3 = int(input("Digite o terceiro numero"))
-        numero4 = int(input("Digite o quarto numero"))
+        numero1 = int(input("Digite o primeiro numero: "))
+        numero2 = int(input("Digite o segundo numero: "))
+        numero3 = int(input("Digite o terceiro numero: "))
+        numero4 = int(input("Digite o quarto numero: "))
         numero1Par = 0
         numero2Par = 0
         numero3Par = 0
@@ -64,9 +64,9 @@ while sair == 0:
 
     # =======================================
     elif escolha == "4":
-        numero1 = int(input("Digite o primeiro numero"))
-        numero2 = int(input("Digite o segundo numero"))
-        numero3 = int(input("Digite o terceiro numero"))
+        numero1 = int(input("Digite o primeiro numero: "))
+        numero2 = int(input("Digite o segundo numero: "))
+        numero3 = int(input("Digite o terceiro numero: "))
 
         if numero1 > numero2 and numero1 > numero3:
             print(f"Número 1: {numero1} é o maior")
