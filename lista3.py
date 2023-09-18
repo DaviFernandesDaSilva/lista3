@@ -242,11 +242,22 @@ while sair == 0:
             print("Inválido")
 
 
-
-
     # =======================================
     elif escolha == "14":
-        print("")
+# z Faça um programa que leia um valor digitado pelo usuário e imprima os resultados com base na
+# tabela.
+        valor = int(input("Digite o valor: "))
+        if valor == 1:
+            print("Bom Dia / Boa Tarde / Boa Noite")
+        elif valor == 2:
+            print("Por Favor :) / Com Licença :D / Muito Obrigado ;)")
+        elif valor == 3:
+            print("Por Gentileza / Você poderia / Desculpe")
+        elif valor == 4:
+            print("Boa Sorte / Tenha Fé")
+        else:
+            print("Estudar vale muito a pena não é !?")
+        
     # =======================================
     elif escolha == "15":
         print("")
