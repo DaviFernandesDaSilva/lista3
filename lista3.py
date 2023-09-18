@@ -14,6 +14,7 @@ while sair == 0:
     print("9 - Ratos Golpistas")
     print("10 - Operações listadas")
     print("11 - Ordem crescente")
+    print("12 - ")
 
     escolha = input("Executar: ")
     # =======================================
@@ -184,16 +185,34 @@ while sair == 0:
             valor2, valor3 = valor3, valor2
 
         print(f'A ordem crescente é {valor3}, {valor2} e {valor1}')
-           
-
-       
-
+    # =======================================    
     elif escolha == "12":
-        print("")
+#12. Usando if e elif , escreva um programa que leia um inteiro entre 1 e 7 e imprima o dia da semana
+# correspondente a este numero. Isto é, domingo se 1, segunda-feira se 2, e assim por diante
+        numero = input("Digite um número inteiro entre 1 e 7: ")
+        if numero == 1:
+            print("Domingo")
+        elif numero == 2:
+            print("Segunda-Feira")
+        elif numero == 3:
+            print("Terça-Feira")
+        elif numero == 4:
+            print("Quarta-Feira")
+        elif numero == 5:
+            print("Quinta-Feira")
+        elif numero == 6:
+            print("Sexta-Feira")
+        elif numero == 1:
+            print("Sábado")
+        else:
+            print("Inválido")
+    # =======================================    
     elif escolha == "13":
         print("")
+    # =======================================
     elif escolha == "14":
         print("")
+    # =======================================
     elif escolha == "15":
         print("")
         
