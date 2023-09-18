@@ -15,6 +15,7 @@ while sair == 0:
     print("10 - Operações listadas")
     print("11 - Ordem crescente")
     print("12 - Dias da Semana")
+    print("13 - Calculadora")
 
     escolha = input("Executar: ")
     # =======================================
@@ -208,7 +209,41 @@ while sair == 0:
             print("Inválido")
     # =======================================    
     elif escolha == "13":
-        print("")
+# 3. Faça um programa que simule uma calculadora com as 4 operações básicas. O usuário digita o
+# primeiro número, escolhe a operação e em seguida digita o segundo número, exatamente nessa ordem.
+# O programação deve mostrar o resultado da operação
+        
+        print("--- Calculadora TOP 10 ---\n\n")
+
+        numero1 = int(input("Digite o primeiro valor: "))
+
+        print("Operações-")
+        print("1 - Adição")
+        print("2- Subtração")
+        print("3 - Multiplicação")
+        print("4 - Divisão")
+        print("5 - Exponenciação")
+
+        operacao = input("Escolha a operação: ")
+
+        numero2 = int(input("Digite o segundo valor: "))
+
+        if operacao == 1:
+            print(f"A resposta é {numero1 + numero2}")
+        elif operacao == 2:
+            print(f"A resposta é {numero1 - numero2}")
+        elif operacao == 3:
+            print(f"A resposta é {numero1 * numero2}")
+        elif operacao == 4:
+            print(f"A resposta é {numero1 / numero2}")
+        elif operacao == 5:
+            print(f"A resposta é {numero1 ** numero2}")
+        else:
+            print("Inválido")
+
+
+
+
     # =======================================
     elif escolha == "14":
         print("")
