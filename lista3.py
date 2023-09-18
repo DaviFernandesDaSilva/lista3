@@ -11,9 +11,11 @@ while sair == 0:
     print("6 - Ler 3 notas e exibir medias")
     print("7 - Sálario do Trabalhador e Empréstimo")
     print("8 - Divisel por 3 ou por 5")
-    print("9 - Golpe dos Ratos Golpistas")
+    print("9 - Ratos Golpistas")
+    print("10 - Operações listadas")
+    print("11 - Ordem crescente")
 
-    escolha = input("Executar exercício: ")
+    escolha = input("Executar: ")
     # =======================================
     if escolha == "0":
         break
@@ -137,7 +139,34 @@ while sair == 0:
             print("Deus é bom.")
     # =======================================
     elif escolha == "10":
-        print("")
+        primeiro_valor = int(input('Digite o primeiro valor: '))
+        segundo_valor = int(input('Digite o segundo valor: '))
+
+        print("- - Operações para realizar - -")
+        print("0 - Cancelar")
+        print("1 - Média entre os números digitados")
+        print("2 - Diferença do maior pelo menor")
+        print("3 - Produto entre os números digitados")
+        print("4 - Divisão do primeiro pelo segundo")
+        escolha = int(input("Qual operação realizar? "))
+
+        if escolha == 1:
+            media = (primeiro_valor + segundo_valor)/2
+            print(f"A média entre {primeiro_valor} e {segundo_valor} é {media}")
+        elif escolha == 2:
+            diferenca = (primeiro_valor - segundo_valor)
+            print(f"A diferença entre {primeiro_valor} e {segundo_valor} é {diferenca}")
+        elif escolha == 3:
+            produto = (primeiro_valor * segundo_valor)
+            print(f"A multiplicação entre {primeiro_valor} e {segundo_valor} resulta em {produto}")
+        elif escolha == 4:
+            divisao = (primeiro_valor / segundo_valor)
+            print(f"A divisão entre {primeiro_valor} e {segundo_valor} resulta em {divisao}")
+        elif escolha == 0:
+            continue
+        else:
+            print("Inválido")
+
     # =======================================
     elif escolha == "11":
         print("")
