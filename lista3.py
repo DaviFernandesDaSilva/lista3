@@ -14,7 +14,7 @@ while sair == 0:
     print("9 - Ratos Golpistas")
     print("10 - Operações listadas")
     print("11 - Ordem crescente")
-    print("12 - ")
+    print("12 - Dias da Semana")
 
     escolha = input("Executar: ")
     # =======================================
