@@ -124,8 +124,17 @@ while sair == 0:
     # =======================================
     elif escolha == "9":
         print("ABAIXO A PRESIDÊNCIA!!!\n")
-        ratosAfavor = input("Números de ratos a favor do GOLPE: ")
+        Dfavor = int(input("Números de DEPURATOS a favor do GOLPE: "))
+        Sfavor = int(input("Números de SENAROEDORES a favor do GOLPE: "))
 
+        if Dfavor < 342:
+            print("Colocaram Fogo na Câmara dos DepuRatos e Evitaram o Golpe")
+        elif Dfavor>=342 and Sfavor<54:
+            print("Homens Bombas Explodiram o Senado Federal e Evitaram o Golpe")
+        elif Dfavor>=342 and Sfavor>=54:
+            print("Nem Goku, nem Naruto e muitos menos os Vingadores. Tome Golpe.")
+        else:
+            print("Deus é bom.")
     # =======================================
     elif escolha == "10":
         print("")
