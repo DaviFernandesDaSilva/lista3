@@ -169,7 +169,34 @@ while sair == 0:
 
     # =======================================
     elif escolha == "11":
+       #11. (Essa aqui tem analisar bem hehhe) Ler três valores e imprimi-los na tela em ordem crescente
+        valor1 = int(input("Digite o primeiro valor: "))
+        valor2 = int(input("Digite o segundo valor: "))
+        valor3 = int(input("Digite o terceiro valor: "))
+
+        if valor1 < valor3:
+            valor1, valor3 = valor3, valor1
+
+        if valor1 < valor2:
+            valor1, valor2 = valor2, valor1
+
+        if valor2 < valor3:
+            valor2, valor3 = valor3, valor2
+
+        print(f'A ordem crescente é {valor3}, {valor2} e {valor1}')
+           
+
+       
+
+    elif escolha == "12":
         print("")
+    elif escolha == "13":
+        print("")
+    elif escolha == "14":
+        print("")
+    elif escolha == "15":
+        print("")
+        
     # =======================================
     else:
         print("Deus é bom")
