@@ -16,6 +16,8 @@ while sair == 0:
     print("11 - Ordem crescente")
     print("12 - Dias da Semana")
     print("13 - Calculadora")
+    print("14 - Frase no Valor")
+    print("15 - Equação de Segundo Grau")
 
     escolha = input("Executar: ")
     # =======================================
@@ -259,7 +261,49 @@ while sair == 0:
             print("Estudar vale muito a pena não é !?")
         
     # =======================================
+    #15. Calcule as raízes da equação do 2º grau.
+#   Lembrando que: x = −b ± √∆ / 2a
+# . Onde ∆ = b 2 − 4ac E ax2 + bx + c = 0 representa uma equação do 2º Grau.
+    # A variável a tem que ser diferente de zero. Caso seja igual, imprima a mensagem "Não é equação do 2º grau".
+    #  Se ∆ < 0, não existe raiz real. Imprima a mensagem Não existe raiz real.
+    #  Se ∆ = 0, existe uma raiz real. Imprima a raiz e a mensagem Raiz única.
+    #  Se ∆ > 0, Imprima as duas raízes reais.
     elif escolha == "15":
+        print("")
+        print("Resolvedor de Equações do Segundo Grau")
+        print("ax^2 + bx + c = 0")
+        print("")
+        a = int(input("Insira o valor a da sua equação: "))
+        b = int(input("Insira o valor b da sua equação: "))
+        c = int(input("Insira o valor c da sua equação: "))
+
+        delta = (b**2)-(4*a*c)
+
+        if a == 0:
+            print("Não é equação do 2º grau")
+        elif delta<0:
+            print("Não existe raiz real")
+        elif delta==0:
+            raiz = (-(b))/(2*a)
+            print(raiz)
+            print("Raiz única")
+        elif delta>0:
+            raizA = ( (-(b))+(delta**(1/2))) /(2*a)
+            raizB = ( (-(b))-(delta**(1/2))) /(2*a)
+            print("Duas Raizes")
+            print(f"{raizA} e {raizB}")
+        else:
+            print("Valores inválidos")
+
+
+    # =======================================
+    elif escolha == "16":
+        print("")
+    # =======================================
+    elif escolha == "17":
+        print("")
+    # =======================================
+    elif escolha == "18":
         print("")
         
     # =======================================
