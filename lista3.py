@@ -5,7 +5,7 @@ sair = 0
 while sair == 0:
     time.sleep(1)
     print("\n\nExercicios:")
-    print("0 - Sair")
+    print("\033[33m0 - Sair")
     print("1 - Dois numeros, maior ou igual")
     print("2 - Número Impar")
     print("3 - Ler 4 números inteiros e calcular soma dos pares")
@@ -25,7 +25,7 @@ while sair == 0:
     print("17 - Aposentadoria")
     print("18 - Ano Bissexto")
 
-    escolha = input("Executar: ")
+    escolha = input("\033[37mExecutar: ")
     # =======================================
 
     if escolha == "0":
