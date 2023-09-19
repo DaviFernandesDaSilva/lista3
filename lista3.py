@@ -18,6 +18,7 @@ while sair == 0:
     print("13 - Calculadora")
     print("14 - Frase no Valor")
     print("15 - Equação de Segundo Grau")
+    print("16 - Triangulo")
 
     escolha = input("Executar: ")
     # =======================================
@@ -295,9 +296,29 @@ while sair == 0:
         else:
             print("Valores inválidos")
 
-
     # =======================================
+#     16. Dados três valores, A, B e C, verifcar se eles podem ser valores dos lados de um triângulo e, se forem,
+# verifcar se é um triângulo escaleno, equilátero ou isóscele, considerando os seguintes conceitos:
+#  O comprimento de cada lado de um triângulo é menor do que a soma dos outros dois lados.
+#  Chama-se equilátero o triângulo que tem três lados iguais.
+#  Denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais.
+#  Recebe o nome de escaleno o triângulo que tem três lados diferente
     elif escolha == "16":
+
+        a = int(input("Valor A: "))
+        b = int(input("Valor B: "))
+        c = int(input("Valor C: "))
+        if a<(b+c) and b<(a+c) and c<(b+a):
+            print("É triangulo")
+            if a==b or b==c:
+                print("Valores de um triangulo isóceles")
+            elif a==b and b==c:
+                print("Valores de um triângulo equilátero")
+            else:
+                print("Valores de um triângulo escaleno")
+        else:
+            print("Isso não é um triângulo")
+
         print("")
     # =======================================
     elif escolha == "17":
