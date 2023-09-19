@@ -27,10 +27,16 @@ while sair == 0:
 
     escolha = input("\033[37mExecutar: ")
     # =======================================
+    # SAIR =======================================
 
     if escolha == "0":
 
+        print("\033[32mPrograma finalizado.\033[37m")
+
         break
+
+    # =======================================
+    # QUESTÃO 1 =======================================
 
     if escolha == "1":
 
@@ -38,24 +44,26 @@ while sair == 0:
         numero2 = int(input("Digite o segundo numero: "))
 
         if numero1 > numero2:
-            print(f"{numero1} é maior")
+            print(f"\033[32m{numero1} é maior")
         elif numero2 > numero1:
-            print(f"{numero2} é maior")
+            print(f"\033[32m{numero2} é maior")
         else:
-            print("Os numeros são iguais")
-
+            print("\033[32mOs numeros são iguais")
+        
     # =======================================
+    # QUESTÃO 2 =======================================
 
     elif escolha == "2":
 
         numero1 = int(input("Digite um numero: "))
 
         if (numero1 % 2 == 0):
-            print("Par")
+            print("\033[32mPar")
         else:
-            print("Impar")
+            print("\033[32mImpar")
 
     # =======================================
+    # QUESTÃO 3 =======================================
 
     elif escolha == "3":
 
@@ -79,9 +87,10 @@ while sair == 0:
 
         soma = numero1Par+numero2Par+numero3Par+numero4Par
 
-        print(f"A Soma dos pares é {soma}")
+        print(f"\033[32mA Soma dos pares é {soma}")
 
     # =======================================
+    # QUESTÃO 4 =======================================
 
     elif escolha == "4":
 
@@ -90,39 +99,41 @@ while sair == 0:
         numero3 = int(input("Digite o terceiro numero: "))
 
         if numero1 > numero2 and numero1 > numero3:
-            print(f"Número 1: {numero1} é o maior")
+            print(f"\033[32mNúmero 1: {numero1} é o maior")
         elif numero2 > numero1 and numero2 > numero3:
-            print(f"Número 2: {numero2} é o maior")
+            print(f"\033[32mNúmero 2: {numero2} é o maior")
         elif numero3 > numero2 and numero3 >= numero1:
-            print(f"Número 3: {numero3} é o maior")
+            print(f"\033[32mNúmero 3: {numero3} é o maior")
         elif numero1 == numero2:
             if numero2 == numero3:
-                print("Todos os numeros são iguais")
+                print("\033[32mTodos os numeros são iguais")
             else:
-                print(f"Número 1: {numero1} é igual a Número 2: {numero2}")
+                print(f"\033[32mNúmero 1: {numero1} é igual a Número 2: {numero2}")
         elif numero2 == numero3:
-            print(f"o Número 2: {numero2} é igual ao Número 3: {numero3}")
+            print(f"\033[32mo Número 2: {numero2} é igual ao Número 3: {numero3}")
         else:
-            print(f"o Número 1: {numero1} é igual a Número 3: {numero3}")
+            print(f"\033[32mo Número 1: {numero1} é igual a Número 3: {numero3}")
 
     # =======================================
+    # QUESTÃO 5 =======================================
     
     elif escolha == "5":
 
-        numero1 = int(input("Digite um numero"))
+        numero1 = int(input("Digite um numero: "))
         if numero1 >= 0:
             raiz = numero1**(1/2)
-            print(f"a raiz do número positivo {numero1} é {raiz}")
+            print(f"\033[32ma raiz do número positivo {numero1} é {raiz}")
         else:
-            print("Número inválido")
+            print("\033[31mNúmero inválido")
 
     # =======================================
+    # QUESTÃO 6 =======================================
 
     elif escolha == "6":
 
-        nota1 = float(input("Digite a primeira nota"))
-        nota2 = float(input("Digite a segunda nota"))
-        nota3 = float(input("Digite a terceira nota"))
+        nota1 = float(input("Digite a primeira nota: "))
+        nota2 = float(input("Digite a segunda nota: "))
+        nota3 = float(input("Digite a terceira nota: "))
 
         if nota1 >= 0.00 and nota2 >= 0.00 and nota3 >= 0.00:
             if nota1 <= 10.00 and nota2 <= 10.00 and nota3 <= 10.00:
@@ -132,6 +143,7 @@ while sair == 0:
                 print("\033[31mValores inválidos")
 
     # =======================================
+    # QUESTÃO 7 =======================================
 
     elif escolha == "7":
         salario = float(input("Digite o salário do trabalhador: "))
@@ -143,6 +155,7 @@ while sair == 0:
             print("\033[31mEmpréstimo Negado")
 
     # =======================================
+    # QUESTÃO 8 =======================================
 
     elif escolha == "8":
 
@@ -153,6 +166,7 @@ while sair == 0:
             print(f"\033[32m{numero1} é divisivel por 3")
 
     # =======================================
+    # QUESTÃO 9 =======================================
 
     elif escolha == "9":
 
@@ -170,6 +184,7 @@ while sair == 0:
             print("Deus é bom.")
 
     # =======================================
+    # QUESTÃO 10 =======================================
 
     elif escolha == "10":
 
@@ -202,6 +217,7 @@ while sair == 0:
             print("\033[31mInválido")
 
     # =======================================
+    # QUESTÃO 11 =======================================
 
     elif escolha == "11":
 
@@ -219,7 +235,8 @@ while sair == 0:
             valor2, valor3 = valor3, valor2
 
         print(f'\033[32mA ordem crescente é {valor3}, {valor2} e {valor1}')
-    # =======================================    
+    # =======================================
+    # QUESTÃO 12 =======================================
 
     elif escolha == "12":
 
@@ -240,7 +257,8 @@ while sair == 0:
             print("\033[32mSábado")
         else:
             print("\033[31mInválido")
-    # =======================================    
+    # =======================================
+    # QUESTÃO 13 =======================================
 
     elif escolha == "13":
         
@@ -274,6 +292,7 @@ while sair == 0:
 
 
     # =======================================
+    # QUESTÃO 14 =======================================
 
     elif escolha == "14":
 
@@ -290,6 +309,7 @@ while sair == 0:
             print("Estudar vale muito a pena não é !?")
         
     # =======================================
+    # QUESTÃO 15 =======================================
 
     elif escolha == "15":
 
@@ -320,6 +340,7 @@ while sair == 0:
             print("\033[32mValores inválidos")
 
     # =======================================
+    # QUESTÃO 16 =======================================
 
     elif escolha == "16":
 
@@ -337,6 +358,7 @@ while sair == 0:
         else:
             print("\033[31mIsso não é um triângulo")
     # =======================================
+    # QUESTÃO 17 =======================================
 
     elif escolha == "17":
 
@@ -352,6 +374,8 @@ while sair == 0:
             print("\033[31mNão irá se aposentar")
 
     # =======================================
+    # QUESTÃO 18 =======================================
+
     elif escolha == "18":
 
         ano = int(input("Digite o ano: "))
