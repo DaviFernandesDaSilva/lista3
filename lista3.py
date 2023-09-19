@@ -4,7 +4,7 @@ sair = 0
 
 while sair == 0:
     time.sleep(1)
-    print("\n\nExercicios:")
+    print("\033[37m\n\nExercicios:")
     print("\033[33m0 - Sair")
     print("1 - Dois numeros, maior ou igual")
     print("2 - Número Impar")
@@ -127,9 +127,9 @@ while sair == 0:
         if nota1 >= 0.00 and nota2 >= 0.00 and nota3 >= 0.00:
             if nota1 <= 10.00 and nota2 <= 10.00 and nota3 <= 10.00:
                 media = float((nota1+nota2+nota3)/3)
-                print(f"A média é {media}")
+                print(f"\033[32mA média é {media}")
             else:
-                print("Valores inválidos")
+                print("\033[31mValores inválidos")
 
     # =======================================
 
@@ -138,9 +138,9 @@ while sair == 0:
         parcela = float(input("Digite o valor da parcela do empréstimo: "))
 
         if ((salario*0.20) > parcela):
-            print("Empréstimo Concedido")
+            print("\033[32mEmpréstimo Concedido")
         else:
-            print("Empréstimo Negado")
+            print("\033[31mEmpréstimo Negado")
 
     # =======================================
 
@@ -148,9 +148,9 @@ while sair == 0:
 
         numero1 = int(print("Digite o número inteiro: "))  # type: ignore
         if numero1 % 3 == 0:
-            print(f"{numero1} é divisivel or 3")
+            print(f"\033[32m{numero1} é divisivel or 3")
         elif numero1 % 3 == 0:
-            print(f"{numero1} é divisivel por 3")
+            print(f"\033[32m{numero1} é divisivel por 3")
 
     # =======================================
 
@@ -161,11 +161,11 @@ while sair == 0:
         Sfavor = int(input("Números de SENAROEDORES a favor do GOLPE: "))
 
         if Dfavor < 342:
-            print("Colocaram Fogo na Câmara dos DepuRatos e Evitaram o Golpe")
+            print("\033[32mColocaram Fogo na Câmara dos DepuRatos e Evitaram o Golpe")
         elif Dfavor>=342 and Sfavor<54:
-            print("Homens Bombas Explodiram o Senado Federal e Evitaram o Golpe")
+            print("\033[32mHomens Bombas Explodiram o Senado Federal e Evitaram o Golpe")
         elif Dfavor>=342 and Sfavor>=54:
-            print("Nem Goku, nem Naruto e muitos menos os Vingadores. Tome Golpe.")
+            print("\033[32mNem Goku, nem Naruto e muitos menos os Vingadores. Tome Golpe.")
         else:
             print("Deus é bom.")
 
@@ -186,20 +186,20 @@ while sair == 0:
 
         if escolha == 1:
             media = (primeiro_valor + segundo_valor)/2
-            print(f"A média entre {primeiro_valor} e {segundo_valor} é {media}")
+            print(f"\033[32mA média entre {primeiro_valor} e {segundo_valor} é {media}")
         elif escolha == 2:
             diferenca = (primeiro_valor - segundo_valor)
-            print(f"A diferença entre {primeiro_valor} e {segundo_valor} é {diferenca}")
+            print(f"\033[32mA diferença entre {primeiro_valor} e {segundo_valor} é {diferenca}")
         elif escolha == 3:
             produto = (primeiro_valor * segundo_valor)
-            print(f"A multiplicação entre {primeiro_valor} e {segundo_valor} resulta em {produto}")
+            print(f"\033[32mA multiplicação entre {primeiro_valor} e {segundo_valor} resulta em {produto}")
         elif escolha == 4:
             divisao = (primeiro_valor / segundo_valor)
-            print(f"A divisão entre {primeiro_valor} e {segundo_valor} resulta em {divisao}")
+            print(f"\033[32mA divisão entre {primeiro_valor} e {segundo_valor} resulta em {divisao}")
         elif escolha == 0:
             continue
         else:
-            print("Inválido")
+            print("\033[31mInválido")
 
     # =======================================
 
@@ -218,28 +218,28 @@ while sair == 0:
         if valor2 < valor3:
             valor2, valor3 = valor3, valor2
 
-        print(f'A ordem crescente é {valor3}, {valor2} e {valor1}')
+        print(f'\033[32mA ordem crescente é {valor3}, {valor2} e {valor1}')
     # =======================================    
 
     elif escolha == "12":
 
-        numero = input("Digite um número inteiro entre 1 e 7: ")
+        numero = int(input("Digite um número inteiro entre 1 e 7: "))
         if numero == 1:
-            print("Domingo")
+            print("\033[32mDomingo")
         elif numero == 2:
-            print("Segunda-Feira")
+            print("\033[32mSegunda-Feira")
         elif numero == 3:
-            print("Terça-Feira")
+            print("\033[32mTerça-Feira")
         elif numero == 4:
-            print("Quarta-Feira")
+            print("\033[32mQuarta-Feira")
         elif numero == 5:
-            print("Quinta-Feira")
+            print("\033[32mQuinta-Feira")
         elif numero == 6:
-            print("Sexta-Feira")
+            print("\033[32mSexta-Feira")
         elif numero == 1:
-            print("Sábado")
+            print("\033[32mSábado")
         else:
-            print("Inválido")
+            print("\033[31mInválido")
     # =======================================    
 
     elif escolha == "13":
@@ -260,17 +260,17 @@ while sair == 0:
         numero2 = int(input("Digite o segundo valor: "))
 
         if operacao == 1:
-            print(f"A resposta é {numero1 + numero2}")
+            print(f"\033[32mA resposta é {numero1 + numero2}")
         elif operacao == 2:
-            print(f"A resposta é {numero1 - numero2}")
+            print(f"\033[32mA resposta é {numero1 - numero2}")
         elif operacao == 3:
-            print(f"A resposta é {numero1 * numero2}")
+            print(f"\033[32mA resposta é {numero1 * numero2}")
         elif operacao == 4:
-            print(f"A resposta é {numero1 / numero2}")
+            print(f"\033[32mA resposta é {numero1 / numero2}")
         elif operacao == 5:
-            print(f"A resposta é {numero1 ** numero2}")
+            print(f"\033[32mA resposta é {numero1 ** numero2}")
         else:
-            print("Inválido")
+            print("\033[31mInválido")
 
 
     # =======================================
@@ -304,20 +304,20 @@ while sair == 0:
         delta = (b**2)-(4*a*c)
 
         if a == 0:
-            print("Não é equação do 2º grau")
+            print("\033[31mNão é equação do 2º grau")
         elif delta<0:
-            print("Não existe raiz real")
+            print("\033[31mNão existe raiz real")
         elif delta==0:
             raiz = (-(b))/(2*a)
-            print(raiz)
-            print("Raiz única")
+            print(f"\033[32m{raiz}")
+            print("\033[32mRaiz única")
         elif delta>0:
             raizA = ( (-(b))+(delta**(1/2))) /(2*a)
             raizB = ( (-(b))-(delta**(1/2))) /(2*a)
-            print("Duas Raizes")
-            print(f"{raizA} e {raizB}")
+            print("\033[32mDuas Raizes")
+            print(f"\033[32m{raizA} e {raizB}")
         else:
-            print("Valores inválidos")
+            print("\033[32mValores inválidos")
 
     # =======================================
 
@@ -329,13 +329,13 @@ while sair == 0:
         if a<(b+c) and b<(a+c) and c<(b+a):
             print("É triangulo")
             if a==b or b==c:
-                print("Valores de um triângulo isóceles")
+                print("\033[32mValores de um triângulo isóceles")
             elif a==b and b==c:
-                print("Valores de um triângulo equilátero")
+                print("\033[32mValores de um triângulo equilátero")
             else:
-                print("Valores de um triângulo escaleno")
+                print("\033[32mValores de um triângulo escaleno")
         else:
-            print("Isso não é um triângulo")
+            print("\033[31mIsso não é um triângulo")
     # =======================================
 
     elif escolha == "17":
@@ -343,13 +343,13 @@ while sair == 0:
         idade_trabalhador = int(input("Digite a idade do trabalhador: "))
         tempo_servico = int(input("Digite o tempo de serviço do trabalhador: "))
         if idade_trabalhador>=65:
-            print("Pode se aposentar")
+            print("\033[32mPode se aposentar")
         elif tempo_servico>=30:
-            print("Pode se aposentar")
+            print("\033[32mPode se aposentar")
         elif idade_trabalhador>=60 and tempo_servico>=25:
-            print("Pode se aposentar")
+            print("\033[32mPode se aposentar")
         else:
-            print("Não irá se aposentar")
+            print("\033[31mNão irá se aposentar")
 
     # =======================================
     elif escolha == "18":
