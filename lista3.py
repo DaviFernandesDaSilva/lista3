@@ -1,7 +1,10 @@
+import time
+
 sair = 0
 
 while sair == 0:
-    print("\nExercicios:")
+    time.sleep(1)
+    print("\n\nExercicios:")
     print("0 - Sair")
     print("1 - Dois numeros, maior ou igual")
     print("2 - Número Impar")
@@ -24,12 +27,13 @@ while sair == 0:
 
     escolha = input("Executar: ")
     # =======================================
+
     if escolha == "0":
+
         break
+
     if escolha == "1":
-        # QUESTÃO 1
-        # Faça um programa que receba dois números e imprima o maior deles, se por acaso os dois números
-        # forem iguais, imprima a mensagem Números iguais.
+
         numero1 = int(input("Digite o primeiro numero: "))
         numero2 = int(input("Digite o segundo numero: "))
 
@@ -41,14 +45,20 @@ while sair == 0:
             print("Os numeros são iguais")
 
     # =======================================
+
     elif escolha == "2":
+
         numero1 = int(input("Digite um numero: "))
+
         if (numero1 % 2 == 0):
             print("Par")
         else:
             print("Impar")
+
     # =======================================
+
     elif escolha == "3":
+
         numero1 = int(input("Digite o primeiro numero: "))
         numero2 = int(input("Digite o segundo numero: "))
         numero3 = int(input("Digite o terceiro numero: "))
@@ -72,7 +82,9 @@ while sair == 0:
         print(f"A Soma dos pares é {soma}")
 
     # =======================================
+
     elif escolha == "4":
+
         numero1 = int(input("Digite o primeiro numero: "))
         numero2 = int(input("Digite o segundo numero: "))
         numero3 = int(input("Digite o terceiro numero: "))
@@ -92,20 +104,26 @@ while sair == 0:
             print(f"o Número 2: {numero2} é igual ao Número 3: {numero3}")
         else:
             print(f"o Número 1: {numero1} é igual a Número 3: {numero3}")
+
     # =======================================
+    
     elif escolha == "5":
+
         numero1 = int(input("Digite um numero"))
         if numero1 >= 0:
             raiz = numero1**(1/2)
             print(f"a raiz do número positivo {numero1} é {raiz}")
         else:
             print("Número inválido")
+
     # =======================================
+
     elif escolha == "6":
+
         nota1 = float(input("Digite a primeira nota"))
         nota2 = float(input("Digite a segunda nota"))
         nota3 = float(input("Digite a terceira nota"))
-    # valido é de 0.00 a 10.00
+
         if nota1 >= 0.00 and nota2 >= 0.00 and nota3 >= 0.00:
             if nota1 <= 10.00 and nota2 <= 10.00 and nota3 <= 10.00:
                 media = float((nota1+nota2+nota3)/3)
@@ -118,20 +136,26 @@ while sair == 0:
     elif escolha == "7":
         salario = float(input("Digite o salário do trabalhador: "))
         parcela = float(input("Digite o valor da parcela do empréstimo: "))
+
         if ((salario*0.20) > parcela):
             print("Empréstimo Concedido")
         else:
             print("Empréstimo Negado")
 
     # =======================================
+
     elif escolha == "8":
+
         numero1 = int(print("Digite o número inteiro: "))  # type: ignore
         if numero1 % 3 == 0:
             print(f"{numero1} é divisivel or 3")
         elif numero1 % 3 == 0:
             print(f"{numero1} é divisivel por 3")
+
     # =======================================
+
     elif escolha == "9":
+
         print("ABAIXO A PRESIDÊNCIA!!!\n")
         Dfavor = int(input("Números de DEPURATOS a favor do GOLPE: "))
         Sfavor = int(input("Números de SENAROEDORES a favor do GOLPE: "))
@@ -144,8 +168,11 @@ while sair == 0:
             print("Nem Goku, nem Naruto e muitos menos os Vingadores. Tome Golpe.")
         else:
             print("Deus é bom.")
+
     # =======================================
+
     elif escolha == "10":
+
         primeiro_valor = int(input('Digite o primeiro valor: '))
         segundo_valor = int(input('Digite o segundo valor: '))
 
@@ -175,8 +202,9 @@ while sair == 0:
             print("Inválido")
 
     # =======================================
+
     elif escolha == "11":
-       #11. (Essa aqui tem analisar bem hehhe) Ler três valores e imprimi-los na tela em ordem crescente
+
         valor1 = int(input("Digite o primeiro valor: "))
         valor2 = int(input("Digite o segundo valor: "))
         valor3 = int(input("Digite o terceiro valor: "))
@@ -192,9 +220,9 @@ while sair == 0:
 
         print(f'A ordem crescente é {valor3}, {valor2} e {valor1}')
     # =======================================    
+
     elif escolha == "12":
-#12. Usando if e elif , escreva um programa que leia um inteiro entre 1 e 7 e imprima o dia da semana
-# correspondente a este numero. Isto é, domingo se 1, segunda-feira se 2, e assim por diante
+
         numero = input("Digite um número inteiro entre 1 e 7: ")
         if numero == 1:
             print("Domingo")
@@ -213,10 +241,8 @@ while sair == 0:
         else:
             print("Inválido")
     # =======================================    
+
     elif escolha == "13":
-# 3. Faça um programa que simule uma calculadora com as 4 operações básicas. O usuário digita o
-# primeiro número, escolhe a operação e em seguida digita o segundo número, exatamente nessa ordem.
-# O programação deve mostrar o resultado da operação
         
         print("--- Calculadora TOP 10 ---\n\n")
 
@@ -248,9 +274,9 @@ while sair == 0:
 
 
     # =======================================
+
     elif escolha == "14":
-# z Faça um programa que leia um valor digitado pelo usuário e imprima os resultados com base na
-# tabela.
+
         valor = int(input("Digite o valor: "))
         if valor == 1:
             print("Bom Dia / Boa Tarde / Boa Noite")
@@ -264,14 +290,9 @@ while sair == 0:
             print("Estudar vale muito a pena não é !?")
         
     # =======================================
-    #15. Calcule as raízes da equação do 2º grau.
-#   Lembrando que: x = −b ± √∆ / 2a
-# . Onde ∆ = b 2 − 4ac E ax2 + bx + c = 0 representa uma equação do 2º Grau.
-    # A variável a tem que ser diferente de zero. Caso seja igual, imprima a mensagem "Não é equação do 2º grau".
-    #  Se ∆ < 0, não existe raiz real. Imprima a mensagem Não existe raiz real.
-    #  Se ∆ = 0, existe uma raiz real. Imprima a raiz e a mensagem Raiz única.
-    #  Se ∆ > 0, Imprima as duas raízes reais.
+
     elif escolha == "15":
+
         print("")
         print("Resolvedor de Equações do Segundo Grau")
         print("ax^2 + bx + c = 0")
@@ -299,12 +320,7 @@ while sair == 0:
             print("Valores inválidos")
 
     # =======================================
-#     16. Dados três valores, A, B e C, verifcar se eles podem ser valores dos lados de um triângulo e, se forem,
-# verifcar se é um triângulo escaleno, equilátero ou isóscele, considerando os seguintes conceitos:
-#  O comprimento de cada lado de um triângulo é menor do que a soma dos outros dois lados.
-#  Chama-se equilátero o triângulo que tem três lados iguais.
-#  Denomina-se isósceles o triângulo que tem o comprimento de dois lados iguais.
-#  Recebe o nome de escaleno o triângulo que tem três lados diferente
+
     elif escolha == "16":
 
         a = int(input("Valor A: "))
@@ -320,15 +336,10 @@ while sair == 0:
                 print("Valores de um triângulo escaleno")
         else:
             print("Isso não é um triângulo")
-
-        print("")
     # =======================================
+
     elif escolha == "17":
-# Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou não se aposentar. As
-# condições para aposentadoria são:
-#  Ter pelo menos 65 anos;
-#  Ou ter trabalhado pelo menos 30 anos;
-#  Ou ter pelo menos 60 anos e trabalhado pelo menos 25 ano
+
         idade_trabalhador = int(input("Digite a idade do trabalhador: "))
         tempo_servico = int(input("Digite o tempo de serviço do trabalhador: "))
         if idade_trabalhador>=65:
@@ -339,20 +350,16 @@ while sair == 0:
             print("Pode se aposentar")
         else:
             print("Não irá se aposentar")
-        print("")
+
     # =======================================
     elif escolha == "18":
-# 18. Determine se um determinado ano lido é bissexto. Sendo que um ano é bissexto se for divisível por
-# 400 ou se for divisível por 4 e não for divisível por 100
+
         ano = int(input("Digite o ano: "))
         if ano%400==0 or (ano%4==0 and ano%100!=0):
             print("\033[32mAno bissexto\033[37m")
         else:
             print("\033[31mAno convencional\033[37m")
 
-        print("")
-
-        
     # =======================================
     else:
         print("Deus é bom")
