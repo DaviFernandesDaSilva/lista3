@@ -19,6 +19,7 @@ while sair == 0:
     print("14 - Frase no Valor")
     print("15 - Equação de Segundo Grau")
     print("16 - Triangulo")
+    print("17 - Aposentadoria")
 
     escolha = input("Executar: ")
     # =======================================
@@ -311,7 +312,7 @@ while sair == 0:
         if a<(b+c) and b<(a+c) and c<(b+a):
             print("É triangulo")
             if a==b or b==c:
-                print("Valores de um triangulo isóceles")
+                print("Valores de um triângulo isóceles")
             elif a==b and b==c:
                 print("Valores de um triângulo equilátero")
             else:
@@ -322,6 +323,21 @@ while sair == 0:
         print("")
     # =======================================
     elif escolha == "17":
+# Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou não se aposentar. As
+# condições para aposentadoria são:
+#  Ter pelo menos 65 anos;
+#  Ou ter trabalhado pelo menos 30 anos;
+#  Ou ter pelo menos 60 anos e trabalhado pelo menos 25 ano
+        idade_trabalhador = int(input("Digite a idade do trabalhador: "))
+        tempo_servico = int(input("Digite o tempo de serviço do trabalhador: "))
+        if idade_trabalhador>=65:
+            print("Pode se aposentar")
+        elif tempo_servico>=30:
+            print("Pode se aposentar")
+        elif idade_trabalhador>=60 and tempo_servico>=25:
+            print("Pode se aposentar")
+        else:
+            print("Não irá se aposentar")
         print("")
     # =======================================
     elif escolha == "18":
