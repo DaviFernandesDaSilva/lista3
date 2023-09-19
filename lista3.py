@@ -159,11 +159,14 @@ while sair == 0:
 
     elif escolha == "8":
 
-        numero1 = int(print("Digite o número inteiro: "))  # type: ignore
-        if numero1 % 3 == 0:
+        numero1 = int(input("Digite o número: "))
+        if numero1%3==0 and numero1%5==1:
             print(f"\033[32m{numero1} é divisivel or 3")
-        elif numero1 % 3 == 0:
-            print(f"\033[32m{numero1} é divisivel por 3")
+        elif numero1 % 5 == 0 and numero1%3==1:
+            print(f"\033[32m{numero1} é divisivel por 5")
+        else:
+            print("\033[32mÉ divisivel simultaneamente pelos dois")
+
 
     # =======================================
     # QUESTÃO 9 =======================================
@@ -189,7 +192,7 @@ while sair == 0:
     elif escolha == "10":
 
         primeiro_valor = int(input('Digite o primeiro valor: '))
-        segundo_valor = int(input('Digite o segundo valor: '))
+        
 
         print("- - Operações para realizar - -")
         print("0 - Cancelar")
@@ -197,7 +200,10 @@ while sair == 0:
         print("2 - Diferença do maior pelo menor")
         print("3 - Produto entre os números digitados")
         print("4 - Divisão do primeiro pelo segundo")
+
         escolha = int(input("Qual operação realizar? "))
+
+        segundo_valor = int(input('Digite o segundo valor: '))
 
         if escolha == 1:
             media = (primeiro_valor + segundo_valor)/2
@@ -273,7 +279,7 @@ while sair == 0:
         print("4 - Divisão")
         print("5 - Exponenciação")
 
-        operacao = input("Escolha a operação: ")
+        operacao = int(input("Escolha a operação: "))
 
         numero2 = int(input("Digite o segundo valor: "))
 
@@ -298,13 +304,13 @@ while sair == 0:
 
         valor = int(input("Digite o valor: "))
         if valor == 1:
-            print("Bom Dia / Boa Tarde / Boa Noite")
+            print("\033[32mBom Dia / Boa Tarde / Boa Noite")
         elif valor == 2:
-            print("Por Favor :) / Com Licença :D / Muito Obrigado ;)")
+            print("\033[32mPor Favor :) / Com Licença :D / Muito Obrigado ;)")
         elif valor == 3:
-            print("Por Gentileza / Você poderia / Desculpe")
+            print("\033[32mPor Gentileza / Você poderia / Desculpe")
         elif valor == 4:
-            print("Boa Sorte / Tenha Fé")
+            print("\033[32mBoa Sorte / Tenha Fé")
         else:
             print("Estudar vale muito a pena não é !?")
         
@@ -335,7 +341,7 @@ while sair == 0:
             raizA = ( (-(b))+(delta**(1/2))) /(2*a)
             raizB = ( (-(b))-(delta**(1/2))) /(2*a)
             print("\033[32mDuas Raizes")
-            print(f"\033[32m{raizA} e {raizB}")
+            print(f"\033[32m{raizA:.3f} e {raizB:.3f}")
         else:
             print("\033[32mValores inválidos")
 
